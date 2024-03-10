@@ -1,0 +1,2023 @@
+@charset "UTF-8";
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Space Mono", sans-serif;
+  margin: 0;
+}
+
+header .navbar-top {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+header .navbar-top .navbar-top-container {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+}
+header .navbar-top .navbar-top-container .website {
+  display: flex;
+  align-items: center;
+  color: rgb(49, 49, 49);
+  font-weight: bold;
+  margin: 0 auto 0 0;
+}
+header .navbar-top .navbar-top-container .website .Changesite {
+  color: #0072bc;
+}
+header .navbar-top .navbar-top-container .website .Changesite:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+header .navbar-top .navbar-top-container .languages ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3em;
+  color: #0072bc;
+}
+header .navbar-top .navbar-top-container .languages li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+header .white-nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+header .white-nav .white-nav-container {
+  width: 100%;
+  max-width: 1300px;
+}
+header .white-nav .white-nav-container ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header .white-nav .white-nav-container ul div {
+  margin: 1em 0;
+  display: flex;
+}
+header .white-nav .white-nav-container ul #left-container {
+  width: 100%;
+  align-items: center;
+}
+header .white-nav .white-nav-container ul #left-container #img-logo {
+  margin-right: auto;
+  margin-left: 0em;
+}
+header .white-nav .white-nav-container ul #left-container .img-icones {
+  margin-right: 1.5em;
+}
+header .white-nav .white-nav-container ul #left-container #hamburguer {
+  display: none;
+}
+header .white-nav .white-nav-container ul #right-container {
+  position: relative;
+  align-items: center;
+}
+header .white-nav .white-nav-container ul .button {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 7.5em;
+  margin-right: 1.5em;
+  border-radius: 0.4em;
+}
+header .white-nav .white-nav-container ul .button a {
+  margin: auto;
+  text-decoration: none; /* remove underline dos links */
+}
+header .white-nav .white-nav-container ul .button .img-icones-pequenos {
+  margin-right: 0.5em;
+}
+header .white-nav .white-nav-container ul .button #coracao {
+  height: 1em;
+}
+header .white-nav .white-nav-container ul #donate {
+  background-color: #faeb00;
+}
+header .white-nav .white-nav-container ul #donate a {
+  color: #212529;
+  font-weight: bold;
+}
+header .white-nav .white-nav-container ul #help {
+  background-color: #0072bc;
+  margin-right: 2em;
+}
+header .white-nav .white-nav-container ul #help a {
+  color: white;
+  font-weight: bold;
+}
+header .white-nav #dropdown-minimized {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 37em;
+  top: 11%;
+  justify-content: center;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu {
+  flex-direction: column;
+  display: none;
+  justify-content: flex-start;
+  top: 0em;
+  left: 10%;
+  width: 80%;
+  max-width: 800px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(245, 251, 255);
+  border: 2px solid rgba(0, 113, 188, 0.5490196078);
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu .dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 2.5em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu .dropdown-header a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+  font-size: 10px;
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu .dropdown-header a img {
+  width: 100%;
+  max-width: 1.5em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu .dropdown-header a:hover {
+  text-decoration: underline;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu .dropdown-header button {
+  margin-right: 0.5em;
+  background-color: transparent;
+  width: 5%;
+  border: 0;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu .dropdown-header button img {
+  width: 100%;
+  max-width: 1.2em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu .dropdown-header button:hover {
+  cursor: pointer;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu ul li {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgba(211, 237, 255, 0.3411764706);
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu ul li a {
+  display: flex;
+  width: 100%;
+  padding: 1em 1em;
+  text-decoration: none;
+  color: #0072bc;
+  font-size: 18px;
+  font-weight: bold;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu ul li button {
+  width: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding-right: 1em;
+  border: 0;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu ul li button img {
+  width: 100%;
+  max-width: 0.75em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-mainmenu ul li button:hover {
+  cursor: pointer;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  justify-content: flex-start;
+  top: 0em;
+  left: 10%;
+  width: 80%;
+  max-width: 800px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(245, 251, 255);
+  border: 2px solid rgba(0, 113, 188, 0.5490196078);
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved .dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 2.5em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved .dropdown-header a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+  font-size: 10px;
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved .dropdown-header a img {
+  width: 100%;
+  max-width: 1.5em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved .dropdown-header a:hover {
+  text-decoration: underline;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved .dropdown-header button {
+  margin-right: 0.5em;
+  background-color: transparent;
+  width: 5%;
+  border: 0;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved .dropdown-header button img {
+  width: 100%;
+  max-width: 1.2em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved .dropdown-header button:hover {
+  cursor: pointer;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved ul li {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgba(211, 237, 255, 0.3411764706);
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved ul li a {
+  display: flex;
+  width: 100%;
+  padding: 1em 1em;
+  text-decoration: none;
+  color: #0072bc;
+  font-size: 18px;
+  font-weight: bold;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about ul li button,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo ul li button,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies ul li button,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories ul li button,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved ul li button {
+  width: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding-right: 1em;
+  border: 0;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about ul li button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo ul li button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies ul li button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories ul li button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved ul li button img {
+  width: 100%;
+  max-width: 0.75em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-about ul li button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-whatwedo ul li button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-emergencies ul li button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-newsandstories ul li button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-getinvolved ul li button:hover {
+  cursor: pointer;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  justify-content: flex-start;
+  top: 0em;
+  left: 10%;
+  width: 80%;
+  max-width: 800px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(245, 251, 255);
+  border: 2px solid rgba(0, 113, 188, 0.5490196078);
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes h2,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications h2 {
+  color: black;
+  font-size: 20px;
+  padding: 0.5em 0em 0.5em 1em;
+  margin: 0;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes .dropdown-header,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications .dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 2.5em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes .dropdown-header a,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications .dropdown-header a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+  font-size: 10px;
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes .dropdown-header a img,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications .dropdown-header a img {
+  width: 100%;
+  max-width: 1.5em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes .dropdown-header a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications .dropdown-header a:hover {
+  text-decoration: underline;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes .dropdown-header button,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications .dropdown-header button {
+  margin-right: 0.5em;
+  background-color: transparent;
+  width: 5%;
+  border: 0;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes .dropdown-header button img,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications .dropdown-header button img {
+  width: 100%;
+  max-width: 1.2em;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes .dropdown-header button:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications .dropdown-header button:hover {
+  cursor: pointer;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes ul,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes ul li,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications ul li {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgba(211, 237, 255, 0.3411764706);
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes ul li a,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications ul li a {
+  display: flex;
+  width: 100%;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+header .white-nav #dropdown-minimized #dropdown-minimized-overview ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-wherewework ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-whoweprotect ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-ourpartners ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-governanceandoversight ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-respondtoemergencies ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-protecthumanrights ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-buildbetterfutures ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-forumsandcomittes ul li a:hover,
+header .white-nav #dropdown-minimized #dropdown-minimized-reportsandpublications ul li a:hover {
+  text-decoration: underline;
+}
+header .blue-nav {
+  background-color: #0072bc;
+  border: 1px solid #338ec9;
+  box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.16);
+}
+header .blue-nav .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+header .blue-nav .container ul {
+  width: 90%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+header .blue-nav .container ul li {
+  display: inline-block;
+}
+header .blue-nav .container ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 1em 0.7em;
+}
+header .blue-nav .container ul li:hover {
+  background-color: white;
+}
+header .blue-nav .container ul li:hover a {
+  color: #0072bc;
+}
+header .blue-nav .container ul li:hover .submenu {
+  display: flex;
+}
+header .blue-nav .container ul .submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 24em;
+  left: 0;
+  padding: 0;
+  border: 2px solid rgba(173, 173, 173, 0.329);
+}
+header .blue-nav .container ul .submenu .left-col {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: 10px;
+}
+header .blue-nav .container ul .submenu .left-col ul {
+  position: relative;
+  width: 25%;
+}
+header .blue-nav .container ul .submenu .left-col ul li {
+  display: block;
+  padding-left: 10px;
+}
+header .blue-nav .container ul .submenu .left-col ul li a {
+  display: block;
+  font-size: 18px;
+  padding: 20px 5px;
+  margin: 0;
+  color: black;
+}
+header .blue-nav .container ul .submenu .left-col ul li:hover {
+  background-color: #0072bc;
+}
+header .blue-nav .container ul .submenu .left-col ul li:hover a {
+  color: white;
+}
+header .blue-nav .container ul .submenu .left-col ul #ovw:hover .overview {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #www:hover .WhereWeWork {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #wwp:hover .WhoWeProtect {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #op:hover .OurPartners {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #gao:hover .GovernanceAndOversight {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #rte:hover .respondtoemergencies {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #phr:hover .protecthumanrights {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #bbf:hover .buildbetterfutures {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #rap:hover .reportsandpublications {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #oe:hover .ongoingemergencies {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #nr:hover .newreleases {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #saa:hover .statementsandannouncements {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #sf:hover .specialfeatures {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #mc:hover .mediacentre {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #wwu:hover .workwithus {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #ta:hover .takeaction {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col ul #wtd:hover .waystodonate {
+  display: block;
+}
+header .blue-nav .container ul .submenu .left-col .overview,
+header .blue-nav .container ul .submenu .left-col .WhereWeWork,
+header .blue-nav .container ul .submenu .left-col .WhoWeProtect,
+header .blue-nav .container ul .submenu .left-col .OurPartners,
+header .blue-nav .container ul .submenu .left-col .GovernanceAndOversight,
+header .blue-nav .container ul .submenu .left-col .respondtoemergencies,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights,
+header .blue-nav .container ul .submenu .left-col .buildbetterfutures,
+header .blue-nav .container ul .submenu .left-col .reportsandpublications,
+header .blue-nav .container ul .submenu .left-col .ongoingemergencies,
+header .blue-nav .container ul .submenu .left-col .newreleases,
+header .blue-nav .container ul .submenu .left-col .statementsandannouncements,
+header .blue-nav .container ul .submenu .left-col .specialfeatures,
+header .blue-nav .container ul .submenu .left-col .mediacentre,
+header .blue-nav .container ul .submenu .left-col .workwithus,
+header .blue-nav .container ul .submenu .left-col .takeaction,
+header .blue-nav .container ul .submenu .left-col .waystodonate {
+  display: none;
+  position: absolute;
+  width: 30em;
+  height: 10em;
+  max-height: 100%;
+  left: 100%; /* Ajuste a posição à direita da ul.left-col */
+  top: 0;
+  padding: 0px 30px;
+}
+header .blue-nav .container ul .submenu .left-col .overview h2,
+header .blue-nav .container ul .submenu .left-col .WhereWeWork h2,
+header .blue-nav .container ul .submenu .left-col .WhoWeProtect h2,
+header .blue-nav .container ul .submenu .left-col .OurPartners h2,
+header .blue-nav .container ul .submenu .left-col .GovernanceAndOversight h2,
+header .blue-nav .container ul .submenu .left-col .respondtoemergencies h2,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights h2,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights h2,
+header .blue-nav .container ul .submenu .left-col .buildbetterfutures h2,
+header .blue-nav .container ul .submenu .left-col .reportsandpublications h2,
+header .blue-nav .container ul .submenu .left-col .ongoingemergencies h2,
+header .blue-nav .container ul .submenu .left-col .newreleases h2,
+header .blue-nav .container ul .submenu .left-col .statementsandannouncements h2,
+header .blue-nav .container ul .submenu .left-col .specialfeatures h2,
+header .blue-nav .container ul .submenu .left-col .mediacentre h2,
+header .blue-nav .container ul .submenu .left-col .workwithus h2,
+header .blue-nav .container ul .submenu .left-col .takeaction h2,
+header .blue-nav .container ul .submenu .left-col .waystodonate h2 {
+  padding: 20px 0px 10px 0px;
+  margin: 10px 0px;
+  font-size: 26px;
+}
+header .blue-nav .container ul .submenu .left-col .overview ul,
+header .blue-nav .container ul .submenu .left-col .WhereWeWork ul,
+header .blue-nav .container ul .submenu .left-col .WhoWeProtect ul,
+header .blue-nav .container ul .submenu .left-col .OurPartners ul,
+header .blue-nav .container ul .submenu .left-col .GovernanceAndOversight ul,
+header .blue-nav .container ul .submenu .left-col .respondtoemergencies ul,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights ul,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights ul,
+header .blue-nav .container ul .submenu .left-col .buildbetterfutures ul,
+header .blue-nav .container ul .submenu .left-col .reportsandpublications ul,
+header .blue-nav .container ul .submenu .left-col .ongoingemergencies ul,
+header .blue-nav .container ul .submenu .left-col .newreleases ul,
+header .blue-nav .container ul .submenu .left-col .statementsandannouncements ul,
+header .blue-nav .container ul .submenu .left-col .specialfeatures ul,
+header .blue-nav .container ul .submenu .left-col .mediacentre ul,
+header .blue-nav .container ul .submenu .left-col .workwithus ul,
+header .blue-nav .container ul .submenu .left-col .takeaction ul,
+header .blue-nav .container ul .submenu .left-col .waystodonate ul {
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 30em;
+}
+header .blue-nav .container ul .submenu .left-col .overview ul li,
+header .blue-nav .container ul .submenu .left-col .WhereWeWork ul li,
+header .blue-nav .container ul .submenu .left-col .WhoWeProtect ul li,
+header .blue-nav .container ul .submenu .left-col .OurPartners ul li,
+header .blue-nav .container ul .submenu .left-col .GovernanceAndOversight ul li,
+header .blue-nav .container ul .submenu .left-col .respondtoemergencies ul li,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights ul li,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights ul li,
+header .blue-nav .container ul .submenu .left-col .buildbetterfutures ul li,
+header .blue-nav .container ul .submenu .left-col .reportsandpublications ul li,
+header .blue-nav .container ul .submenu .left-col .ongoingemergencies ul li,
+header .blue-nav .container ul .submenu .left-col .newreleases ul li,
+header .blue-nav .container ul .submenu .left-col .statementsandannouncements ul li,
+header .blue-nav .container ul .submenu .left-col .specialfeatures ul li,
+header .blue-nav .container ul .submenu .left-col .mediacentre ul li,
+header .blue-nav .container ul .submenu .left-col .workwithus ul li,
+header .blue-nav .container ul .submenu .left-col .takeaction ul li,
+header .blue-nav .container ul .submenu .left-col .waystodonate ul li {
+  padding: 7px 0px;
+  max-height: 20px;
+  background-color: transparent;
+}
+header .blue-nav .container ul .submenu .left-col .overview ul li a,
+header .blue-nav .container ul .submenu .left-col .WhereWeWork ul li a,
+header .blue-nav .container ul .submenu .left-col .WhoWeProtect ul li a,
+header .blue-nav .container ul .submenu .left-col .OurPartners ul li a,
+header .blue-nav .container ul .submenu .left-col .GovernanceAndOversight ul li a,
+header .blue-nav .container ul .submenu .left-col .respondtoemergencies ul li a,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights ul li a,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights ul li a,
+header .blue-nav .container ul .submenu .left-col .buildbetterfutures ul li a,
+header .blue-nav .container ul .submenu .left-col .reportsandpublications ul li a,
+header .blue-nav .container ul .submenu .left-col .ongoingemergencies ul li a,
+header .blue-nav .container ul .submenu .left-col .newreleases ul li a,
+header .blue-nav .container ul .submenu .left-col .statementsandannouncements ul li a,
+header .blue-nav .container ul .submenu .left-col .specialfeatures ul li a,
+header .blue-nav .container ul .submenu .left-col .mediacentre ul li a,
+header .blue-nav .container ul .submenu .left-col .workwithus ul li a,
+header .blue-nav .container ul .submenu .left-col .takeaction ul li a,
+header .blue-nav .container ul .submenu .left-col .waystodonate ul li a {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+header .blue-nav .container ul .submenu .left-col .overview ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .WhereWeWork ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .WhoWeProtect ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .OurPartners ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .GovernanceAndOversight ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .respondtoemergencies ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .protecthumanrights ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .buildbetterfutures ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .reportsandpublications ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .ongoingemergencies ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .newreleases ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .statementsandannouncements ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .specialfeatures ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .mediacentre ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .workwithus ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .takeaction ul li a:hover,
+header .blue-nav .container ul .submenu .left-col .waystodonate ul li a:hover {
+  text-decoration: underline;
+}
+header .blue-nav .container ul .submenu .right-col {
+  display: flex;
+  background-color: rgb(233, 245, 252);
+  padding: 20px 10px;
+  flex-direction: column;
+  align-items: left;
+  width: 25%;
+}
+header .blue-nav .container ul .submenu .first h1 {
+  font-size: 30px;
+}
+header .blue-nav .container ul .submenu .first .select #format {
+  display: flex;
+  width: 10em;
+  height: 3em;
+  font-size: 18px;
+  color: grey;
+}
+header .blue-nav .container ul .submenu .first .select #format option {
+  color: grey;
+  font-size: 16px;
+}
+header .blue-nav .container ul .submenu .second img,
+header .blue-nav .container ul .submenu .fourth img,
+header .blue-nav .container ul .submenu .fifth img {
+  width: 100%;
+}
+header .blue-nav .container ul .submenu .second p .boldspan,
+header .blue-nav .container ul .submenu .fourth p .boldspan,
+header .blue-nav .container ul .submenu .fifth p .boldspan {
+  font-weight: bold;
+}
+header .blue-nav .container ul .submenu .second button,
+header .blue-nav .container ul .submenu .fourth button,
+header .blue-nav .container ul .submenu .fifth button {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  background-color: #0072bc;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+header .blue-nav .container ul .submenu .second button a,
+header .blue-nav .container ul .submenu .fourth button a,
+header .blue-nav .container ul .submenu .fifth button a {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+header .blue-nav .container ul .submenu .second button:hover,
+header .blue-nav .container ul .submenu .fourth button:hover,
+header .blue-nav .container ul .submenu .fifth button:hover {
+  background-color: #0072bc;
+}
+header .blue-nav .container ul .submenu .third h3 {
+  padding: 30px 0px 0px 0px;
+  margin: 0;
+  font-size: 12px;
+}
+header .blue-nav .container ul .submenu .third h2 {
+  margin: 0;
+  padding: 0;
+}
+header .blue-nav .container ul .submenu .third p {
+  font-size: 16px;
+}
+header .blue-nav .container ul .submenu .third p span a {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  font-size: 16px;
+}
+header .blue-nav .container ul .submenu .third button {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  background-color: #0072bc;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+header .blue-nav .container ul .submenu .third button a {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+header .blue-nav .container ul .submenu .third button:hover {
+  background-color: #0072bc;
+}
+header .blue-nav .container #simbolos {
+  display: none;
+  align-items: center;
+  padding: 0;
+  margin-right: 1em;
+}
+header .blue-nav .container #simbolos img {
+  width: 100%;
+  height: 1.5em;
+  padding: 0;
+  margin: 0em 0.5em;
+}
+header .blue-nav-fixa {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .blue-nav-fixa #simbolos {
+  display: flex !important;
+  align-items: center;
+}
+header .blue-nav-fixa #simbolos img {
+  margin-right: 3em;
+  height: 1.8em;
+}
+
+main {
+  background-color: white;
+}
+main .globalrefugeeforum {
+  background-color: #0072bc;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: 1em 0em;
+}
+main .globalrefugeeforum .globalrefugeeforum-content {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex {
+  margin: auto;
+  font-weight: bold;
+  width: 35%;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #titulo {
+  color: #faeb00;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #texto {
+  display: flex;
+  margin-bottom: 0.6em;
+  color: white;
+  font-size: 2.5em;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2em;
+  width: 100%;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container .buttons a {
+  padding: 0.5em 0;
+  text-decoration: none;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container #botao1 {
+  max-width: 40%;
+  background-color: #faeb00;
+  margin-bottom: 1em;
+  width: 30%;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container #botao1 a {
+  color: black;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container #botao2 {
+  max-width: 60%;
+  color: white;
+  border: 2px solid white;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container #botao2 a {
+  color: white;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .right-flex {
+  width: 65%;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .right-flex #imagem img {
+  width: 100%;
+}
+main .globalrefugeeforum .globalrefugeeforum-content .right-flex #legenda {
+  color: white;
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+main .container-A {
+  display: flex;
+  justify-content: center;
+}
+main .container-A .content-container-A {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: 3em 0em;
+}
+main .container-A .content-container-A .blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr;
+  gap: 2em;
+}
+main .container-A .content-container-A .blocks .BlockA {
+  border-bottom: 5px solid #f4f4f4;
+}
+main .container-A .content-container-A .blocks .BlockC {
+  display: flex;
+  flex-direction: column;
+}
+main .container-A .content-container-A .blocks .BlockC button {
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+main .container-A .content-container-A .blocks .BlockC button a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+main .container-A .content-container-A .blocks .BlockC button:hover {
+  cursor: pointer;
+  background-color: rgb(224, 223, 223);
+  transition: 0.5s;
+}
+main .container-B {
+  display: flex;
+  justify-content: center;
+}
+main .container-B .content-container-B {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px;
+}
+main .container-B .content-container-B .left-div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+main .container-B .content-container-B .left-div .title {
+  font-size: 32px;
+}
+main .container-B .content-container-B .left-div .bar-chart {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+main .container-B .content-container-B .left-div .bar-chart img {
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+main .container-B .content-container-B .left-div .bar-chart p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+main .container-B .content-container-B .left-div .bar-chart p a {
+  text-decoration: none;
+  color: #0072bc;
+}
+main .container-B .content-container-B .left-div .pie-chart {
+  display: flex;
+  flex-direction: column;
+}
+main .container-B .content-container-B .left-div .pie-chart img {
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+main .container-B .content-container-B .left-div .pie-chart p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+main .container-B .content-container-B .left-div .pie-chart p a {
+  text-decoration: none;
+  color: #0072bc;
+}
+main .container-B .content-container-B .right-div {
+  width: 30%;
+}
+main .container-B .content-container-B .right-div .title {
+  font-size: 32px;
+}
+main .container-B .content-container-B .right-div img {
+  width: 100%;
+  max-width: 100%;
+}
+main .container-B .content-container-B .button {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+main .container-B .content-container-B .button button {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid rgb(48, 48, 48);
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+}
+main .container-B .content-container-B .button button a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+main .container-B .content-container-B .button button:hover {
+  cursor: pointer;
+  background-color: rgb(224, 223, 223);
+  transition: 0.5s;
+}
+main .NeedHelp-container {
+  display: flex;
+  background-color: #0072bc;
+  justify-content: center;
+  margin: 3em 0em;
+}
+main .NeedHelp-container .NeedHelp-content {
+  text-align: center;
+  width: 100%;
+  max-width: 1300px;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+main .NeedHelp-container .NeedHelp-content h1 {
+  font-weight: bold;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+main .NeedHelp-container .NeedHelp-content h3 {
+  font-weight: bold;
+  color: white;
+}
+main .NeedHelp-container .NeedHelp-content button {
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+main .NeedHelp-container .NeedHelp-content button a {
+  text-decoration: none;
+  color: white;
+}
+main .NeedHelp-container .NeedHelp-content button:hover {
+  background-color: #0072bc;
+}
+main .News-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .News-container .title {
+  width: 100%;
+  max-width: 1300px;
+  color: black;
+  padding-bottom: 20px;
+}
+main .News-container .content-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1300px;
+}
+main .News-container .content-container .left-content {
+  width: 50%;
+}
+main .News-container .content-container .left-content a {
+  text-decoration: none;
+}
+main .News-container .content-container .left-content a img {
+  width: 100%;
+}
+main .News-container .content-container .left-content a:hover #title {
+  text-decoration: underline;
+}
+main .News-container .content-container .left-content .text #type {
+  color: #0072bc;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-size: 10px;
+}
+main .News-container .content-container .left-content .text #title {
+  color: black;
+  padding-top: 5px;
+  font-size: 20px;
+}
+main .News-container .content-container .left-content .text #date {
+  color: grey;
+  font-size: 14px;
+  padding-top: 15px;
+}
+main .News-container .content-container .right-content {
+  width: 50%;
+}
+main .News-container .content-container .right-content .row {
+  display: flex;
+  padding-bottom: 30px;
+}
+main .News-container .content-container .right-content .row a {
+  display: flex;
+  text-decoration: none;
+}
+main .News-container .content-container .right-content .row a:hover #title {
+  text-decoration: underline;
+}
+main .News-container .content-container .right-content .row .text {
+  padding-left: 20px;
+}
+main .News-container .content-container .right-content .row .text #type {
+  color: #0072bc;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-size: 10px;
+}
+main .News-container .content-container .right-content .row .text #title {
+  color: black;
+  padding-top: 5px;
+  font-size: 20px;
+}
+main .News-container .content-container .right-content .row .text #date {
+  color: grey;
+  font-size: 14px;
+  padding-top: 15px;
+}
+main .News-container .content-container .button {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+main .News-container .content-container .button button {
+  background-color: transparent;
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  border-color: rgb(82, 82, 82);
+  border-width: 2px;
+}
+main .News-container .content-container .button button a {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+main .News-container .content-container .button button:hover {
+  background-color: rgb(219, 219, 219);
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .EmergencyAppeal-container {
+  display: flex;
+  background-color: rgb(52, 58, 64);
+  justify-content: center;
+  margin-top: 3em;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content {
+  display: flex;
+  max-width: 1300px;
+  padding: 2em 0em;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .info-col {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .info-col .info-col-content h3 {
+  color: yellow;
+  padding: 0;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .info-col .info-col-content h1 {
+  color: white;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .info-col .info-col-content p {
+  color: white;
+  font-size: 18px;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .info-col .info-col-content span {
+  font-weight: bold;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .img-col {
+  width: 65%;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .img-col .img-col-content {
+  max-width: 900px;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .img-col .img-col-content p {
+  color: white;
+}
+main .EmergencyAppeal-container .EmergencyAppeal-content .img-col .img-col-content img {
+  width: 100%;
+}
+main .Donate-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(52, 58, 64);
+  padding: 0em 0em 3em 0em;
+  margin-bottom: 4em;
+}
+main .Donate-options .break-line {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 1300px;
+}
+main .Donate-options .break-line hr {
+  border-width: 0;
+  height: 3px;
+  background-color: rgba(93, 100, 107, 0.747);
+}
+main .Donate-options .donate-tables {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 50px;
+  max-width: 1300px;
+}
+main .Donate-options .donate-tables .donate-button {
+  width: 25%;
+}
+main .Donate-options .donate-tables .donate-button button {
+  width: 100%;
+  height: 50px;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+}
+main .Donate-options .donate-tables .donate-button button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+main .Donate-options .donate-tables .option {
+  width: 25%;
+  color: white;
+}
+main .Donate-options .donate-tables .option .plans {
+  font-weight: bold;
+}
+main .DataandStats-container {
+  display: flex;
+  justify-content: center;
+}
+main .DataandStats-container .DataandStats-content {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+}
+main .DataandStats-container .DataandStats-content .left-cont {
+  width: 50%;
+  margin-right: 2em;
+}
+main .DataandStats-container .DataandStats-content .left-cont .image img {
+  width: 100%;
+}
+main .DataandStats-container .DataandStats-content .right-cont {
+  width: 50%;
+}
+main .DataandStats-container .DataandStats-content .right-cont .content p {
+  font-size: 18px;
+}
+main .DataandStats-container .DataandStats-content .right-cont .content button {
+  background-color: #0072bc;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  width: 17em;
+  height: 2.5em;
+  border: none;
+  border-radius: 5px;
+}
+main .DataandStats-container .DataandStats-content .right-cont .content button:hover {
+  background-color: rgb(0, 140, 255);
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .boxes-container {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0em;
+}
+main .boxes-container .boxes-content {
+  display: flex;
+  max-width: 1300px;
+  gap: 30px;
+}
+main .boxes-container .boxes-content .box {
+  width: 33%;
+}
+main .boxes-container .boxes-content .box img {
+  width: 100%;
+}
+main .boxes-container .boxes-content .box p {
+  color: black;
+  font-size: 18px;
+}
+main .boxes-container .boxes-content .box .title {
+  color: #0072bc;
+  font-weight: bold;
+}
+main .formulario {
+  background-color: #0072bc;
+  display: flex;
+  justify-content: center;
+}
+main .formulario .form-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  align-items: center;
+}
+main .formulario .form-content .BlocoA {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 1.7em;
+  margin: 0.5em;
+  margin-top: 2em;
+}
+main .formulario .form-content .BlocoA label {
+  cursor: pointer;
+  background-color: white;
+  padding: 1em 3em;
+  border-radius: 0.1em;
+  font-size: 14px;
+  margin: 1em;
+}
+main .formulario .form-content .BlocoA input {
+  display: none;
+}
+main .formulario .form-content .BlocoA input:checked + label {
+  background-color: #faeb00;
+}
+main .formulario .form-content .BlocoBotoes {
+  display: flex;
+  margin-top: 0.5em;
+}
+main .formulario .form-content .BlocoBotoes button {
+  font-weight: bold;
+  font-size: 1em;
+  background-color: white;
+  padding: 0.8em 2.5em;
+  border-radius: 0.2em;
+  border: 0;
+  margin: 0em 0.5em;
+}
+main .formulario .form-content .BlocoC {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+  color: white;
+}
+main .formulario .form-content .dados {
+  color: white;
+}
+main .formulario .form-content .dados .BlocoE .Empresa {
+  display: none;
+}
+main .formulario .form-content .Mensal {
+  display: none;
+}
+main .formulario .form-content .Pagamento #PagamentoMensal {
+  display: none;
+}
+main .formulario .form-content .submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+main .formulario .form-content .submit button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 30em;
+  background-color: #faeb00;
+  padding: 0.5em 0;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 0.3em;
+  border: 0;
+}
+main .formulario .form-content #resultado {
+  display: none;
+  margin-top: 1em;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0.2em;
+  padding: 1em;
+}
+
+footer #footer-top {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+footer #footer-top .container-cols {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 1300px;
+}
+footer #footer-top .container-cols .col {
+  width: 25%;
+  height: 100%;
+  padding: 0em 1em;
+}
+footer #footer-top .container-cols .col .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+}
+footer #footer-top .container-cols .col .text {
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer #footer-top .container-cols .col button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bold;
+}
+footer #footer-top .container-cols .col button a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+footer #footer-top .container-cols .col button:hover {
+  background-color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+footer #footer-top .container-cols .n2 ul {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 1em;
+  padding: 0;
+}
+footer #footer-top .container-cols .n2 ul img {
+  width: 1.5em;
+  height: 1.5em;
+}
+footer #footer-top .container-cols .n4 ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer #footer-top .container-cols .n4 ul a {
+  margin-bottom: 5px;
+  text-decoration: underline;
+  color: white;
+}
+footer #footer-top .container-cols .n4 ul a:hover {
+  color: #a7afb5;
+}
+footer #footer-top .container-cols .n4 ul li {
+  margin-bottom: 5px;
+}
+footer #footer-bottom {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+}
+footer #footer-bottom .footer-bottom-content {
+  width: 100%;
+  max-width: 1300px;
+  justify-content: center;
+}
+footer #footer-bottom .footer-bottom-content .break-line {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  max-width: 1300px;
+}
+footer #footer-bottom .footer-bottom-content .break-line hr {
+  border-width: 0;
+  height: 1px;
+  background-color: rgb(145, 151, 156);
+}
+footer #footer-bottom .footer-bottom-content .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+}
+footer #footer-bottom .footer-bottom-content .container .leftdiv {
+  width: 50%;
+  padding-left: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+footer #footer-bottom .footer-bottom-content .container .leftdiv #imagem {
+  width: 200px;
+  height: 50px;
+}
+footer #footer-bottom .footer-bottom-content .container .rightdiv {
+  width: 50%;
+}
+footer #footer-bottom .footer-bottom-content .container .rightdiv .navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  gap: 2em;
+  color: white;
+  font-size: small;
+}
+footer #footer-bottom .footer-bottom-content .container .rightdiv .copyrightimage {
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+  color: rgb(155, 153, 153);
+}
+
+@media (max-width: 1000px) {
+  header .navbar-top {
+    font-size: 12px;
+  }
+  header .navbar-top .navbar-top-container {
+    width: 100%;
+    margin: 0em 5em;
+  }
+  header .navbar-top .navbar-top-container .languages ul {
+    gap: 1em;
+  }
+  header .blue-nav,
+  header .blue-nav-fixa {
+    display: none !important;
+  }
+  header .white-nav .white-nav-container ul {
+    flex-direction: column;
+    margin: 0 10%;
+  }
+  header .white-nav .white-nav-container ul div {
+    justify-content: center;
+  }
+  header .white-nav .white-nav-container ul #left-container {
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 0.5em;
+  }
+  header .white-nav .white-nav-container ul #left-container #hamburguer {
+    display: inline;
+    width: 2.5%;
+    min-width: 0.9em;
+    margin-right: 1em;
+  }
+  header .white-nav .white-nav-container ul #left-container #hamburguer .btn-hamburguer {
+    width: 2em;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  header .white-nav .white-nav-container ul #left-container #hamburguer .btn-hamburguer img {
+    display: flex;
+    display: inline;
+    justify-content: center;
+    width: 2.5%;
+    min-width: 0.9em;
+    margin-right: 1em;
+  }
+  header .white-nav .white-nav-container ul #left-container #hamburguer .btn-hamburguer:hover {
+    cursor: pointer;
+  }
+  header .white-nav .white-nav-container ul #left-container #img-logo {
+    margin-right: auto;
+    margin-left: 0em;
+  }
+  header .white-nav .white-nav-container ul #left-container #img-logo #logo-size {
+    width: 50%;
+    min-width: 6em;
+  }
+  header .white-nav .white-nav-container ul #left-container .img-icones {
+    width: 50%;
+    min-width: 1em;
+    margin-right: 1em;
+  }
+  header .white-nav .white-nav-container ul #right-container {
+    margin-top: 0;
+  }
+  header .white-nav .white-nav-container ul #right-container .button {
+    height: 2.3em;
+  }
+  header .white-nav .white-nav-container ul #right-container .button a {
+    text-align: center;
+  }
+  header .white-nav .white-nav-container ul #right-container #help {
+    margin: 0;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content .left-flex {
+    width: 100%;
+    margin: 1em 0 1em 0;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content .left-flex #texto {
+    margin: 0;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container {
+    flex-direction: row;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container .buttons {
+    margin: 1.5em 1em;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container #botao1 {
+    margin-left: 0;
+    width: 30%;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content .left-flex #buttons-container #botao2 {
+    width: 50%;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content .right-flex {
+    width: 100%;
+  }
+  main .container-A .content-container-A {
+    max-width: 750px;
+  }
+  main .container-B .content-container-B {
+    max-width: 750px;
+  }
+  main .NeedHelp-container .NeedHelp-content {
+    max-width: 600px;
+  }
+  main .NeedHelp-container .NeedHelp-content h1 {
+    font-size: 24px;
+  }
+  main .NeedHelp-container .NeedHelp-content h3 {
+    font-size: 16px;
+  }
+  main .News-container .title {
+    max-width: 700px;
+    padding-bottom: 20px;
+  }
+  main .News-container .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .News-container .content-container .left-content {
+    width: 100%;
+    max-width: 700px;
+  }
+  main .News-container .content-container .right-content {
+    width: 100%;
+    max-width: 700px;
+  }
+  main .News-container .content-container .right-content .row img {
+    display: none;
+  }
+  main .News-container .content-container .right-content .row .text {
+    padding-left: 0px;
+  }
+  main .EmergencyAppeal-container .EmergencyAppeal-content {
+    flex-direction: column;
+  }
+  main .EmergencyAppeal-container .EmergencyAppeal-content .info-col {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  main .EmergencyAppeal-container .EmergencyAppeal-content .info-col .info-col-content {
+    max-width: 700px;
+  }
+  main .EmergencyAppeal-container .EmergencyAppeal-content .img-col {
+    width: 100%;
+  }
+  main .EmergencyAppeal-container .EmergencyAppeal-content .img-col .img-col-content {
+    max-width: 100%;
+  }
+  main .Donate-options .break-line {
+    display: none;
+  }
+  main .Donate-options .donate-tables {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  main .Donate-options .donate-tables .donate-button {
+    width: 100%;
+    max-width: 700px;
+  }
+  main .Donate-options .donate-tables .option {
+    width: 100%;
+    max-width: 700px;
+  }
+  main .DataandStats-container .DataandStats-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  main .DataandStats-container .DataandStats-content .left-cont {
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+  }
+  main .DataandStats-container .DataandStats-content .left-cont .image img {
+    width: 100%;
+  }
+  main .DataandStats-container .DataandStats-content .right-cont {
+    width: 100%;
+    max-width: 700px;
+  }
+  main .boxes-container .boxes-content {
+    max-width: 700px;
+  }
+  footer #footer-top .container-cols {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer #footer-top .container-cols .col {
+    width: 100%;
+    max-width: 700px;
+  }
+  footer #footer-bottom {
+    display: flex;
+  }
+  footer #footer-bottom .footer-bottom-content {
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+  }
+  footer #footer-bottom .footer-bottom-content .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer #footer-bottom .footer-bottom-content .container .leftdiv {
+    width: 100%;
+    max-width: 900px;
+    padding: 0;
+    justify-content: center;
+  }
+  footer #footer-bottom .footer-bottom-content .container .rightdiv {
+    width: 100%;
+    max-width: 900px;
+    padding: 0;
+  }
+  footer #footer-bottom .footer-bottom-content .container .rightdiv .navbar {
+    padding: 1em 0em;
+    margin: 0;
+    gap: 0;
+    justify-content: flex-start;
+  }
+  footer #footer-bottom .footer-bottom-content .container .rightdiv .navbar ul {
+    padding: 0;
+    margin: 0;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  footer #footer-bottom .footer-bottom-content .container .rightdiv .copyrightimage {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 700px) {
+  header .navbar-top .navbar-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .navbar-top .navbar-top-container .website {
+    padding-top: 10px;
+    margin: 0;
+    gap: 0;
+  }
+  header .navbar-top .navbar-top-container .linguas {
+    padding-top: 15px;
+  }
+  header .white-nav #dropdown-minimized {
+    top: 14%;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content {
+    max-width: 500px;
+  }
+  main .globalrefugeeforum .globalrefugeeforum-content .right-flex #imagem img {
+    content: url("img/RefugeeForumSmall.webp");
+  }
+  main .container-A .content-container-A {
+    max-width: 500px;
+  }
+  main .container-A .content-container-A .blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+  }
+  main .container-A .content-container-A .blocks .BlockA {
+    width: 100%;
+  }
+  main .container-A .content-container-A .blocks .BlockB {
+    width: 100%;
+  }
+  main .container-A .content-container-A .blocks .BlockC {
+    width: 100%;
+  }
+  main .container-B .content-container-B {
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .container-B .content-container-B .left-div {
+    width: 100%;
+  }
+  main .container-B .content-container-B .right-div {
+    width: 100%;
+  }
+  main .NeedHelp-container .NeedHelp-content {
+    max-width: 400px;
+  }
+  main .News-container .title {
+    max-width: 480px;
+  }
+  main .News-container .content-container {
+    max-width: 480px;
+  }
+  main .EmergencyAppeal-container .EmergencyAppeal-content .info-col .info-col-content {
+    max-width: 500px;
+  }
+  main .Donate-options .donate-tables .donate-button {
+    max-width: 500px;
+  }
+  main .Donate-options .donate-tables .option {
+    max-width: 500px;
+  }
+  main .DataandStats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .DataandStats-container .left-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .DataandStats-container .left-cont .image img {
+    width: 100%;
+    max-width: 500px;
+  }
+  main .DataandStats-container .right-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .DataandStats-container .right-cont .content {
+    width: 100%;
+    max-width: 500px;
+  }
+  main .DataandStats-container .right-cont .content h1 {
+    font-size: 24px;
+  }
+  main .boxes-container .boxes-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    gap: 0px;
+  }
+  main .boxes-container .boxes-content .box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>UNHCR, the UN Refugee Agency | UNHCR</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+   <link href="styles.css" rel="stylesheet">
+   <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+   <header>
+      <nav class="navbar-top">
+         <div class="navbar-top-container">
+            <div class="website">
+               UNHCR global website: <span class="Changesite">  Change site <img src="img/top-icons-arrow-down.svg"></span>
+            </div>
+            <div class="languages">
+               <ul>
+                  <li>English</li>
+                  <li>Français</li>
+                  <li>Español</li>
+                  <li>عربي</li>
+               </ul>
+            </div>
+         </div>
+     </nav>
+      <nav class="white-nav">
+         <div class="white-nav-container">
+            <ul>
+               <div id="left-container">
+                  <li id="hamburguer">
+                     <button class="btn-hamburguer" onclick="showmainmenu()">
+                        <img src="img/hamburguer.svg">
+                     </button>
+                  </li>
+                  <li id="img-logo"> <a href="">
+                     <img src="img/UNHCR_LOGO.svg" id="logo-size">
+                  </li></a>
+                  <li>      
+                     <img src="img/LUPA.svg" class="img-icones">
+                  </li>
+                  <li>
+                     <img src="img/GLOBO.svg" class="img-icones">
+                  </li>
+               </div>
+
+               <div id="right-container">
+                  <li class="button" id="donate"> <a href="#donation_form" role="button">
+                     <img src="img/CORACAO.svg" class="img-icones-pequenos" id="coracao">DONATE
+                  </a> </li>
+
+                  <li class="button" id="help"> <a href="https://help.unhcr.org/" role="button">
+                     <img src="img/INFO.svg" class="img-icones-pequenos">GET HELP
+                  </a> </li>
+               </div>
+            </ul>
+         </div>
+         <div id="dropdown-minimized">
+            <div id="dropdown-minimized-mainmenu">
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+                  <ul>
+                     <li>
+                        <a href="">About</a>
+                        <button id="ABOUT" onclick="showabout()"><img src="img/arrow-right-blue.svg"></button>
+                     </li>
+                     <li>
+                        <a href="">What we do</a>
+                        <button id="WHATWEDO" onclick="showwhatwedo()"><img src="img/arrow-right-blue.svg"></button>
+                     </li>
+                     <li>
+                        <a href="">Emergencies</a>
+                        <button id="EMERGENCIES" onclick="showemergencies()"><img src="img/arrow-right-blue.svg"></button>
+                     </li>
+                     <li>
+                        <a href="">News and stories</a>
+                        <button id="NEWSANDSTORIES" onclick="shownewsandstories()"><img src="img/arrow-right-blue.svg"></button>
+                     </li>
+                     <li>
+                        <a href="">Get involved</a>
+                        <button id="GETINVOLVED" onclick="showgetinvolved()"><img src="img/arrow-right-blue.svg"></button>
+                     </li>
+                  </ul>
+               
+            </div>
+            <div id="dropdown-minimized-about">
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <ul>
+                  <li>
+                     <a href="">Overview</a>
+                     <button id="ABOUT" onclick="show_overview()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Where we work</a>
+                     <button id="WHEREWEWORK" onclick="show_wherewework()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Who we protect</a>
+                     <button id="WHOWEPROTECT" onclick="show_whoweprotect()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Our partners</a>
+                     <button id="OURPARTNERS" onclick="show_ourpartners()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Governance and oversight</a>
+                     <button id="GOVERNANCEANDOVERSIGHT" onclick="show_governanceandoversight()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+               </ul>  
+            </div>
+            <div id="dropdown-minimized-whatwedo">
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <ul>
+                  <li>
+                     <a href="">Respond to emergencies</a>
+                     <button id="RESPONDTOEMERGENCIES" onclick="show_respondtoemergencies()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Protect human rights</a>
+                     <button id="PROTECTHUMANRIGHTS" onclick="show_protecthumanrights()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Build better futures</a>
+                     <button id="BUILDBETTERFUTURES" onclick="show_buildbetterfutures()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Forums and comittees</a>
+                     <button id="FORUMSANDCOMITTES" onclick="show_forumsandcomittes()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Reports and publications</a>
+                     <button id="REPORTSANDPUBS" onclick="show_reportsandpublications()"><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-emergencies">
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <ul>
+                  <li>
+                     <a href="">Ongoing emergencies</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Other countries</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-newsandstories">
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <ul>
+                  <li>
+                     <a href="">New releases</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Stories</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Statements and announcements</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Special features</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Media centre</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-getinvolved">
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <ul>
+                  <li>
+                     <a href="">Work with us</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Take action</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Stay informed</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Ways to donate</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+                  <li>
+                     <a href="">Shop MADE51 handicrafts</a>
+                     <button><img src="img/arrow-right-blue.svg"></button>
+                  </li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-overview">
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Overview</h2>
+               <ul>
+                  <li><a href="#">The high comissioner</a></li>
+                  <li><a href="#">History of UNHCR</a></li>
+                  <li><a href="#">The 1951 refugee convention</a></li>
+                  <li><a href="#">Figures at a glance</a></li>
+                  <li><a href="#">Sustainable development goals</a></li>
+                  <li><a href="#">Global compact of refugees</a></li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-wherewework"><!---->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Where We work</h2>
+               <ul>
+                  <li><a href="#">Africa</a></li>
+                     <li><a href="#">Americas</a></li>
+                     <li><a href="#">Asia and the Pacific</a></li>
+                     <li><a href="#">Europe</a></li>
+                     <li><a href="#">Middle East and North Africa</a></li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-whoweprotect"><!---->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Who we protect</h2>
+               <ul>
+                  <li><a href="#">Asylum-seekers</a></li>
+                  <li><a href="#">Refugees</a></li>
+                  <li><a href="#">Internally displaced people</a></li>
+                  <li><a href="#">Stateless people</a></li>
+                  <li><a href="#">Returnees</a></li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-ourpartners"><!---->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Our partners</h2>
+               <ul>
+                  <li><a href="#">Non-governamental orgs</a></li>
+                  <li><a href="#">Refugees</a></li>
+                  <li><a href="#">Returnees</a></li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-governanceandoversight"><!------------->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Governance and oversight</h2>
+               <ul>
+                  <li><a href="#">Non-governmental organizations</a></li>
+                  <li><a href="#">Private sectors</a></li>
+                  <li><a href="#">Sport partners</a></li>
+                  <li><a href="#">Prominent supporters</a></li>
+                  <li><a href="#">UN and international institutions</a></li>
+                  <li><a href="#">Additional partnerships</a></li>
+                  <li><a href="#">Governments</a></li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-respondtoemergencies"><!---->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Respond to emergencies</h2>
+               <ul>
+                  <li><a href="#">Shelter</a></li>
+                  <li><a href="#">Cash-based interventions</a></li>
+                  <li><a href="#">Coordinating assistance</a></li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-protecthumanrights"><!---->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Protect human rights</h2>
+               <ul>
+                  <li><a href="#">Protection</a></li>
+                  <li><a href="#">Advocacy</a></li>
+                  <li><a href="#">Ending statelessness</a></li>
+                  <li><a href="#">Safeguarding individuals</a></li>
+                  <li><a href="#">Public health</a></li>
+                  <li><a href="#">Asylum and migration</a></li>
+                  <li><a href="#">Tackling sexual exploitation, abuse and harassment</a></li>
+               </ul>
+            </div>
+            <div id="dropdown-minimized-buildbetterfutures"><!---->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Build better futures</h2>
+               <ul>
+                  <li><a href="#">Education</a></li>
+                  <li><a href="#">Livelihoods and economic inclusion</a></li>
+                  <li><a href="#">Long-term solutions</a></li>
+                  <li><a href="#">Environment, disasters and climate change</a></li>
+                  <li><a href="#">Innovation Service</a></li>
+               </ul>
+            </div>
+
+            <div id="dropdown-minimized-forumsandcomittes"><!---->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Forums and comittes</h2>
+            </div>
+            <div id="dropdown-minimized-reportsandpublications"><!---->
+               <div class="dropdown-header">
+                  <a class="globo" href="">
+                     <img src="img/GLOBO.svg">
+                     Sites
+                  </a>
+                  <button id="close-btn" onclick="closeall()"><img src="img/close-blue.svg"></button> 
+               </div>
+               <h2>Reports and publications</h2>
+               <ul>
+                  <li><a href="#">Data and statistics</a></li>
+                  <li><a href="#">Handbooks and toolkits</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <nav class="blue-nav">
+         <div class="container">
+            <ul class="navbar">
+               <li><a href="">About UNHCR</a>
+                  <div class="submenu">
+                     <div class="left-col">
+                        <ul>
+                           <li id="ovw"><a href="">Overview</a>
+                              <div class="overview">
+                                 <h2>Overview</h2>
+                                    <ul>
+                                       <li><a href="#">The high comissioner</a></li>
+                                       <li><a href="#">History of UNHCR</a></li>
+                                       <li><a href="#">The 1951 refugee convention</a></li>
+                                       <li><a href="#">Figures at a glance</a></li>
+                                       <li><a href="#">Sustainable development goals</a></li>
+                                       <li><a href="#">Global compact of refugees</a></li>
+                                    </ul>
+                              </div>
+                           </li>
+                           <li id="www"><a href="">Where we work</a>
+                              <div class="WhereWeWork">
+                                 <h2>Where we work</h2>
+                                 <ul>
+                                    <li><a href="#">Africa</a></li>
+                                    <li><a href="#">Americas</a></li>
+                                    <li><a href="#">Asia and the Pacific</a></li>
+                                    <li><a href="#">Europe</a></li>
+                                    <li><a href="#">Middle East and North Africa</a></li>
+                                 </ul> 
+                           </li>
+                           <li id="wwp"><a href="">Who we protect</a>
+                              <div class="WhoWeProtect">
+                                 <h2>Who We Protect</h2>
+                                 <ul>
+                                    <li><a href="#">Asylum-seekers</a></li>
+                                    <li><a href="#">Refugees</a></li>
+                                    <li><a href="#">Internally displaced people</a></li>
+                                    <li><a href="#">Stateless people</a></li>
+                                    <li><a href="#">Returnees</a></li>
+                                 </ul>
+                           </div>
+                           </li>
+                           <li id="op"><a href="">Our partners</a>
+                              <div class="OurPartners">
+                                 <h2>Our Partners</h2>
+                                 <ul>
+                                    <li><a href="#">Non-governamental orgs</a></li>
+                                    <li><a href="#">Refugees</a></li>
+                                    <li><a href="#">Returnees</a></li>
+                                 </ul>
+                           </div>
+                           </li>
+                           <li id="gao"><a href="">Governance and oversight</a>
+                              <div class="GovernanceAndOversight">
+                                 <h2>Governance and Oversight</h2>
+                                 <ul>
+                                    <li><a href="#">Non-governmental organizations</a></li>
+                                    <li><a href="#">Private sectors</a></li>
+                                    <li><a href="#">Sport partners</a></li>
+                                    <li><a href="#">Prominent supporters</a></li>
+                                    <li><a href="#">UN and international institutions</a></li>
+                                    <li><a href="#">Additional partnerships</a></li>
+                                    <li><a href="#">Governments</a></li>
+                                 </ul>
+                           </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="first right-col">
+                        <h1>Where we work</h1>
+                        <div class="select">
+                           <select name="format" id="format">
+                              <option selected disabled>Choose a country</option>
+                              <option value="Portugal">Portugal</option>
+                              <option value="England">England</option>
+                              <option value="Spain">Spain</option>
+                              <option value="USA">USA</option>
+                              <option value="Brazil">Brazil</option>
+                           </select>
+                        </div>
+                     </div>
+                  
+                  </div>
+               </li>
+
+               <li><a href="">What we do</a>
+                  <div class="submenu">
+                     <div class="left-col">
+                        <ul>
+                           <li id="rte"><a href="">Respond to emergencies</a>
+                              <div class="respondtoemergencies">
+                                 <h2>Respond to emergencies</h2>
+                                    <ul>
+                                       <li><a href="#">Shelter</a></li>
+                                       <li><a href="#">Cash-based interventions</a></li>
+                                       <li><a href="#">Coordinating assistance</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                           <li id="phr"><a href="">Protect human rights</a>
+                              <div class="protecthumanrights">
+                                 <h2>Protect human rights</h2>
+                                    <ul>
+                                       <li><a href="#">Protection</a></li>
+                                       <li><a href="#">Advocacy</a></li>
+                                       <li><a href="#">Ending statelessness</a></li>
+                                       <li><a href="#">Safeguarding individuals</a></li>
+                                       <li><a href="#">Public health</a></li>
+                                       <li><a href="#">Asylum and migration</a></li>
+                                       <li><a href="#">Tackling sexual exploitation, abuse and harassment</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                           <li id="bbf"><a href="">Build better futures</a>
+                              <div class="buildbetterfutures">
+                                 <h2>Build better futures</h2>
+                                    <ul>
+                                       <li><a href="#">Education</a></li>
+                                       <li><a href="#">Livelihoods and economic inclusion</a></li>
+                                       <li><a href="#">Long-term solutions</a></li>
+                                       <li><a href="#">Environment, disasters and climate change</a></li>
+                                       <li><a href="#">Innovation Service</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                           <li id="fac"><a href="">Forums and comittees</a>
+                           </li>
+                           <li id="rap"><a href="">Reports and publications</a>
+                              <div class="reportsandpublications">
+                                 <h2>Reports and publications</h2>
+                                    <ul>
+                                       <li><a href="#">Data and statistics</a></li>
+                                       <li><a href="#">Handbooks and toolkits</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                        </ul>  
+                     </div> 
+                     <div class="second right-col">
+                        <img src="img/cta-data1.webp">
+                        <p><span class="boldspan">Looking for data?</span> Browse UNHCR data and global statistics.</p>
+                        <button><a href="https://www.unhcr.org/what-we-do/reports-and-publications/unhcr-data">UNHCR data</a></button>
+                     </div>
+                  </div>
+               </li>     
+               <li><a href="">Emergencies</a>
+                  <div class="submenu">
+                     <div class="left-col">
+                        <ul>
+                           <li id="oe"><a href="">Ongoing emergencies</a>
+                              <div class="ongoingemergencies">
+                                 <h2>Ongoing emergencies</h2>
+                                    <ul>
+                                       <li><a href="#">Afghanistan emergency</a></li>
+                                       <li><a href="#">DR Congo emergency</a></li>
+                                       <li><a href="#">Horn of Africa drought emergency</a></li>
+                                       <li><a href="#">Rohingya emergency</a></li>
+                                       <li><a href="#">Sudan emergency</a></li>
+                                       <li><a href="#">Syria emergency</a></li>
+                                       <li><a href="#">Ukraine emergency</a></li>
+                                       <li><a href="#">Venezuela situation</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                           <li id="oc"><a href="">Other countries</a></li>
+                        </ul>  
+                     </div> 
+                     <div class="third right-col">
+                        <h3>HELP</h3>
+                        <h2>Are you a refugee, aylum-seekers or stateless person in need for help</h2>
+                        <p>Find country-specific contact details and information about your rights and available services on our <span><a href="">HELP site</a></span></p>
+                        <button><a href="https://help.unhcr.org/">Visit the HELP site</a></button>
+                     </div>
+                  </div>
+               </li>
+               <li><a href="">News and stories</a>
+                  <div class="submenu">
+                     <div class="left-col">
+                        <ul>
+                           <li id="nr"><a href="">New releases</a>
+                              <div class="newreleases">
+                                 <h2>New releases</h2>
+                                    <ul>
+                                       <li><a href="#">Briefing notes</a></li>
+                                       <li><a href="#">Press releases</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                           <li id="strs"><a href="">Stories</a></li>
+                           <li id="saa"><a href="">Statements and announcements</a>
+                              <div class="statementsandannouncements">
+                                 <h2>Statements and announcements</h2>
+                                    <ul>
+                                       <li><a href="#">Statements</a></li>
+                                       <li><a href="#">Announcements</a></li>
+                                    </ul>  
+                              </div>
+                           <li id="sf"><a href="">Special features</a>
+                              <div class="specialfeatures">
+                                 <h2>Special features</h2>  
+                              </div>
+                           </li>
+                           <li id="mc"><a href="">Media centre</a>
+                              <div class="mediacentre">
+                                 <h2>Media centre</h2>
+                                    <ul>
+                                       <li><a href="#">International media contacts</a></li>
+                                       <li><a href="#">Global social media accounts</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                        </ul>  
+                     </div>
+                     <div class="fourth right-col">
+                        <img src="img/RF1281821.webp">
+                        <p><span class="boldspan">In focus:</span> Sudan - Six months of crisis and forced displacement</p>
+                        <button><a href="https://storymaps.arcgis.com/stories/e02f1a1878ad4bed9ccdb6eab429da75">Read more</a></button>
+                     </div> 
+                  </div>
+               </li>
+               <li><a href="">Get involved</a>
+                  <div class="submenu">
+                     <div class="left-col">
+                        <ul>
+                           <li id="wwu"><a href="">Work with us</a>
+                              <div class="workwithus">
+                                 <h2>Work with us</h2>
+                                    <ul>
+                                       <li><a href="#">Careers at UNHCR</a></li>
+                                       <li><a href="#">Become a supplier</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                           <li id="ta"><a href="">Take action</a>
+                              <div class="takeaction">
+                                 <h2>Take action</h2>
+                                    <ul>
+                                       <li><a href="#">World refugee day</a></li>
+                                       <li><a href="#">Aiming higher</a></li>
+                                       <li><a href="#">Model UN Refugee Challenge</a></li>
+                                       <li><a href="#">Young Champions for Refugees</a></li>
+                                       <li><a href="#">Youth with refugees Art Contest</a></li>
+                                       <li><a href="#">Connecting Worlds app</a></li>
+                                       <li><a href="#">How do you flee climate change?</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                           <li id="si"><a href="">Stay informed</a>
+                           </li>
+                           <li id="wtd"><a href="">Ways to donate</a>
+                              <div class="waystodonate">
+                                 <h2>Ways to donate</h2>
+                                    <ul>
+                                       <li><a href="#">Donate</a></li>
+                                       <li><a href="#">Leave a legacy</a></li>
+                                    </ul>  
+                              </div>
+                           </li>
+                           <li id="made51"><a href="">Shop MADE51 handicrafts</a></li>
+                        </ul>  
+                     </div> 
+                     <div class="fifth right-col">
+                        <img src="img/hope-away-from-home-english.webp">
+                        <p><span class="boldspan">Hope Away from Home: </span> Sign the petition and help protect the right to seek asylum.</p>
+                        <button><a href="https://www.unhcr.org/hope/">Join us</a></button>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+            <div id="simbolos">
+               <a href="#donation_form"><img src="img/CORACAO-WHITE.svg"></a>
+               <a href="https://help.unhcr.org/"><img src="img/INFO.svg"></a>
+               <a href="#"><img src="img/LUPA-WHITE.svg"></a>
+           </div>  
+         </div>
+      </nav>
+   </header>
+
+
+   <main>
+      <div class="globalrefugeeforum">
+         <div class="globalrefugeeforum-content">
+            <div class="left-flex">
+                  <div id="titulo">GLOBAL REFUGEE FORUM 2023</div>
+                  <div id="texto">Global Refugee Forum delivers unity and action amid global crises</div>
+                  <div id="buttons-container">
+                        <div class="buttons" id="botao1"><a href="https://www.unhcr.org/news/stories/global-refugee-forum-delivers-unity-and-action-amid-global-crises" role="button">Read the story</a></div>
+                        <div class="buttons " id="botao2"><a href="https://www.unhcr.org/global-refugee-forum-2023" role="button">Global Refugee Forum</a></div>
+                  </div>
+            </div>
+         
+         <div class="right-flex">
+                 <div id="imagem"><img src="img/RefugeeForum.webp"></div>
+                 <div id="legenda">© UNHCR/Will Swanson</div>
+         </div>
+      </div>
+     </div>
+
+      <div class="container-A">
+         <div class="content-container-A">
+            <div class="title">
+               <h1>UNHCR helps to save lives and build better futures for the millions of people forced to flee their homes.</h1>
+            </div>
+   
+            <div class="blocks">
+               <div class="BlockA">
+                  <h3>UNHCR, the UN Refugee Agency works to ensure that everybody has the right to seek asylum and find safe refuge, having fled violence, persecution or war at home.</h3>
+               </div>
+               <div class="BlockB">
+                  <p>Since 1950, we have faced multiple crises on multiple continents, and provided vital protection and assistance to refugees, asylum-seekers, internally displaced and stateless people, many of whom have nobody left to turn to.</p>
+                  <p>We help to save lives and build better futures for millions forced from home.</p>
+               </div>
+               <div class="BlockC">
+                  <button><a href="">Learn more about our work</a></button>
+                  <button><a href="">How can i get involved?</a></button>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+      <div class="container-B">
+         <div class="content-container-B">
+            <div class="left-div">
+               <h2 class="title">Key facts and figures</h2>
+               <div class="bar-chart">
+                  <h2>108.4 million people worldwide are forcibly displaced.</h2>
+                  <img src="img/bar-chart.png">
+                  <p>As of the end of 2022</p>
+                  <p>Source: <a href="">UNHCR Global Trends 2022</a>, 14 June 2023</p>
+               </div>
+               <div class="pie-chart">
+                  <h2>Most refugees – 76 per cent – are hosted by low- and middle-income countries.</h2>
+                  <img src="img/pie-chart.png">
+                  <p>As of the end of 2022</p>
+                  <p>Disclaimer: figures do not add up to 100 per cent due to rounding.</p>
+                  <p>Source: <a href="">UNHCR Global Trends 2022</a>, 14 June 2023</p>
+               </div>
+               <div class="button">
+                  <button><a href="">Get the latest data and statistics</a></button>
+               </div>
+            </div>
+            <div class="right-div">
+               <h2 class="title">Latest from Twitter</h2>
+               <a><img src="img/latestfromtt.png"></a>
+            </div>
+         </div>
+      </div>
+
+      <div class="NeedHelp-container">
+         <div class="NeedHelp-content">
+             <h1>Need help?</h1>
+             <h3>Find information and services for refugees, asylum-seekers and stateless persons</h3>
+             <button>
+                 <a href="https://www.unhcr.org/services-refugees-asylum-seekers-and-stateless-people">
+                     Services for refugees
+                 </a>
+             </button>
+         </div>
+     </div>
+
+     <div class="News-container">
+      <div class="title">
+         <h1>Latest from UNHCR</h1>
+      </div>
+      <div class="content-container">
+         <div class="left-content">
+            <a href="https://www.unhcr.org/news/stories/young-refugees-champion-climate-action-zimbabwe-s-tongogara-camp">
+               <img src="img/RF1316706.webp">
+               <div class="text">
+                  <p id="type"">Stories</p>
+                  <h3 id="title">Young refugees champion climate action in Zimbabwe’s Tongogara camp</h3>
+                  <p id="date">08 December 2023</p>
+               </div>
+            </a>
+          </div>
+          <div class="right-content">
+              <div class="row 1">
+                  <a href="https://www.unhcr.org/news/briefing-notes/global-refugee-forum-offers-hope-and-promise-action-end-troubling-year">
+                      <img src="img/RF1290596.webp">
+                      <div class="text">
+                          <p id="type">Briefing notes</p>
+                          <h3 id="title">Global Refugee Forum offers hope, and promise of action, at end of a troubling year</h3>
+                          <p id="date">08 December 2023</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="row 2">
+                  <a href="https://www.unhcr.org/news/stories/refugees-and-displaced-people-climate-frontlines-call-greater-inclusion-cop28">
+                      <img src="img/RF1294014.webp">
+                      <div class="text">
+                          <p id="type">Stories</p>
+                          <h3 id="title">Refugees and displaced people from climate frontlines call for greater inclusion at COP28</h3>
+                          <p id="date">05 December 2023</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="row 3">
+                  <a href="https://www.unhcr.org/news/stories/young-refugees-champion-climate-action-zimbabwe-s-tongogara-camp">
+                      <img src="img/RF1315958.webp">
+                      <div class="text"> 
+                          <p id="type">Stories</p>
+                          <h3 id="title">Getting degrees recognized helps refugees follow their dreams in Brazil</h3>
+                          <p id="date">06 December 2023</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="button">
+                  <button>
+                      <a href="https://www.unhcr.org/news-and-stories">
+                          More news and stories
+                      </a>
+                  </button>
+              </div>   
+          </div>
+      </div>
+   </div>
+
+   <div class="EmergencyAppeal-container">
+      <div class="EmergencyAppeal-content">
+          <div class="info-col">
+              <div class="info-col-content">
+                  <h3>EMERGENCY APPEAL</h3>
+                  <h1>Winter Emergency</h1>
+                  <p><span class="negrito">As temperatures drop, millions of families forced to flee will face another cold winter far from home.</span></p>
+                  <p>In <span class="negrito">Ukraine</span>, UNHCR, the UN Refugee Agency, is providing cash assistance, winter supplies and helping to reinforce homes and collective shelters against the harsh weather.</p>
+                  <p>In <span class="negrito">Lebanon, Jordan, Syria, Afghanistan</span>, as well as in <span class="negrito">Iran</span> and <span class="negrito">Pakistan</span> UNHCR is on the ground providing life-saving aid and winter supplies to refugees and displaced families. We are also providing support to families fleeing the <span class="negrito">Sudan</span> crisis, who are facing similar challenges for the first time.</p>
+                  <p>Your donation is needed more than ever now to protect vulnerable families.</p>
+              </div>
+          </div>
+          <div class="img-col">
+              <div class="img-col-content">
+                  <img src="img/RF1271672.webp">
+                  <p>This coming winter will again be very challenging for millions of people forced to flee their homes around the world.</p>
+                  <p>© UNHCR/Julian Busch</p>
+              </div>
+          </div>
+      </div>   
+  </div>
+  
+  <div class="Donate-options">
+      <div class="break-line">
+          <hr>
+      </div>
+      <div class="donate-tables">
+              <div class="donate-button">
+                  <button>
+                      <a href="#donation_form">Donate now</a>
+                  </button>
+              </div>
+              <div class="option 1">
+                  <p><span class="plans">US$ 930</span></p>
+                  <p>Could support three forcibly displaced families to cover their basic needs during the harsh winter months in Syria.</p>
+              </div>
+              <div class="option 2">
+                  <p><span class="plans">US$ 550</span></p>
+                  <p>Could provide cash assistance for two families in Afghanistan allowing them to buy food, fuel and warm supplies to meet their most urgent needs in the winter months.</p>
+              </div>
+              <div class="option 3">
+                  <p><span class="plans">US$ 50 monthly</span></p>
+                  <p>Could support a family in Egypt with cash grants to help them meet their basic needs especially during the winter months.</p>
+              </div>
+      </div>
+  
+  </div>
+
+  <div class="DataandStats-container">
+   <div class="DataandStats-content">
+      <div class="left-cont">
+         <div class="image">
+            <img src="img/global-trends-2022-thumbnail.webp">
+         </div>
+      </div>
+      <div class="right-cont">
+         <div class="content">
+            <h3>DATA AND STATISTICS</h3>
+            <h1>UNHCR annual Global Trends report 2022</h1>
+            <p>UNHCR's Global Trends report presents key statistical trends and the latest official statistics on refugees, asylum-seekers, internally displaced and stateless persons. </p>
+            <p>Ongoing and new conflicts have driven displacement across the world in 2022, seeing the largest ever increase between years according to UNHCR’s statistics on forced displacement. </p>
+            <p>With over 108.4 million people forcibly displaced by the end of 2022, the international community must work together to support and show solidarity with people forced to flee.  </p>
+            <a href="https://www.unhcr.org/global-trends">
+                  <button>View the Global Trends report</button>
+            </a>
+         </div>
+      </div>
+   </div>
+   </div>
+   <div class="boxes-container">
+      <div class="boxes-content">
+          <div class="box n1">
+              <a href="https://www.unhcr.org/about-unhcr/who-we-protect">
+                  <img src="img/Imagem1.webp">
+              </a>
+              <p><span class="title">Who we protect</span></p>
+              <p>Our primary pourpose at UNHCR is to safeguard the rights and well-being of people who have been forced to flee and those denied a nationality.</p>
+          </div>
+
+          <div class="box n2">
+              <a href="https://www.unhcr.org/sign-and-stay-informed">
+                  <img src="img/Imagem2.webp">
+              </a>
+              <p><span class="title">Subscribe to the UNHCR newsletter</span></p>   
+              <p>Subscribe to our newsletter and become part of a global community that cares about the protection and well-being of refugees.</p>   
+          </div>
+          <div class="box n3">
+              <a href="https://shop.made51.org/collections/shop-all">
+                  <img src="img/Imagem3.webp">
+              </a>
+              <p><span class="title">Shop refugee-crafted products at MADE51</span></p> 
+              <p>Browse the MADE51 shop for beautiful hand-made pieces produced by refugees.</p>
+          </div>
+      </div>
+  </div>
+
+  
+  <form class="formulario" id="donation_form">
+   <div class="form-content">
+       <div class="BlocoA">
+           <input type="radio" id="unica" name="doacao" checked> <label for="unica">Única</label>
+           <input type="radio" id="mensal" name="doacao"> <label for="mensal">Mensal</label>
+       </div>
+
+       <div class="BlocoBotoes">
+           <button id="20">€ 20</button>
+           <button id="40">€ 40</button>
+           <button id="80">€ 80</button>
+       </div>
+
+       <div class="BlocoC">
+           <p>Escolhe o teu próprio valor (€)</p>
+           <input type="number" id="valor" min="0" placeholder="€" required>
+       </div>
+
+       <div class="dados">
+           <p> Preenche as tuas informações </p>
+           <div class="BlocoD">
+               <p> Email </p>
+               <input type="text" id="email" placeholder="Email" required>
+           </div>
+
+           <div class="BlocoE">
+               <p> Particular/Empresa </p>
+               <input type="radio" id="particular" name="tipo" checked> <label for="particular">Particular</label>
+               <input type="radio" id="empresa" name="tipo"> <label for="empresa">Empresa</label>
+               </input>
+
+               <div class="Particular">
+                   <input type="text" id="nome" placeholder="Nome">
+                   <input type="text" id="apelido" placeholder="Apelido">
+                   <input type="number" id="telemovel" placeholder="Telemovel">
+                   <input type="number" id="nif" placeholder="Nif">
+                   </input>
+               </div>
+   
+               <div class="Empresa">
+                   <input type="text" id="nome" placeholder="Nome">
+                   <input type="number" id="telemovel" placeholder="Telemovel">
+                   <input type="number" id="nif" placeholder="Nif">
+               </div>
+
+           </div>
+
+           <div class="Mensal">
+               <input type="text" id="rua" placeholder="Rua">
+               <input type="text" id="cidade" placeholder="Cidade">
+               <input type="number" id="postal" placeholder="Código Postal">
+               <input type="text" id="pais-origem" placeholder="País de Origem">
+           </div>
+
+           
+
+           <div class="Bloco">
+               <p> Destino do Donativo </p>
+               <select name="pais" id="pais" required>
+                   <option value="" selected disabled>Escolhe um país</option>
+                   <option value="Nigéria">Nigéria</option>
+                   <option value="Afeganistão">Afeganistão</option>
+                   <option value="Moçambique">Moçambique</option>
+                   <option value="Somália">Somália</option>
+                   <option value="Libéria">Libéria</option>
+                   <option value="Malauí">Malauí</option>
+               </select>
+           </div>
+
+           <div class="Pagamento">
+               <p>Pagamento</p>
+               <div id="PagamentoUnico">
+                   <input type="radio" id="cc" name="pagamento"> <label for="cc">Cartão de Crédito</label>
+                   <input type="radio" id="paypal" name="pagamento"> <label for="paypal">Paypal</label>
+                   <input type="radio" id="multibanco" name="pagamento"> <label for="multibanco">Multibanco</label>
+                   <input type="radio" id="mbway" name="pagamento"> <label for="mbway">MBWay</label>
+               </div>
+
+               <div id="PagamentoMensal">
+                   <input type="radio" id="cc" name="pagamento"> <label for="cc">Cartão de Crédito</label>
+                   <input type="radio" id="dd" name="pagamento"> <label for="dd">Débito Direto</label>
+               </div>
+
+           </div>
+       </div>
+
+       <div id="resultado"></div>
+       <div class="submit"><button type="submit">Doar</button></div>
+   </div>
+</form>
+
+   </main>
+
+   <footer>
+      <div id="footer-top">
+          <div class="container-cols">
+              <div class="col n1">
+                  <div class="title">
+                      Support our work
+                  </div>
+                  <div class="text">
+                      Please help refugees in need.
+                  </div>
+                  <button><a href="#donation_form">Donate now</a></button>  
+              </div>
+
+              <div class="col n2">
+                  <div class="title">
+                      Stay connected
+                  </div>
+                  <div class="text">
+                      Follow us on:
+                  </div>
+                  <ul>
+                      <li><a href="https://www.facebook.com/ACNURBrasil/?brand_redir=13204463437"><img src="img/facebook-white.svg"></a></li>
+                      <li><a href="https://www.instagram.com/refugees/"><img src="img/instagram-white.svg"></a></li>
+                      <li><a href="https://www.youtube.com/c/unhcr"><img src="img/youtube-white.svg"></a></li>
+                      <li><a href="https://www.tiktok.com/@refugees"><img src="img/tiktok-white.svg"></a></li>
+                      <li><a href="https://www.linkedin.com/company/unhcr/"><img src="img/linkedin-white.svg"></a></li>
+                  </ul>
+              </div>
+              <div class="col n3">
+                  <div class="title">
+                      Stay informed
+                  </div>
+                  <div class="text">
+                      Sign up to our newsletter to learn more about people forced to flee and how you can support them. 
+                  </div>
+                  <button>Subscribe</button>  
+              </div>
+              <div class="col n4">
+                  <div class="title">
+                      Contact us
+                  </div>
+                  <ul>
+                      <li><a href="https://www.unhcr.org/contact-us/frequently-asked-questions">Frequently asked questions</a></li>
+                      <li><a href="https://www.unhcr.org/contact-us">Contact UNHCR</a></li>
+                      <li><a href="https://www.unhcr.org/news-and-stories/media-centre">Media Centre</a></li>
+                      <li><a href="https://www.unhcr.org/about-unhcr/governance-and-oversight/inspector-generals-office-igo/reporting-misconduct">Report misconduct or abuse</a></li>
+                      <li><a href="https://www.unhcr.org/contact-us/report-fraudulent-site-or-cyber-security-issue">Report a fraudlent site or email</a></li>
+                      <li><a href="https://www.unhcr.org/get-involved/work-us/supply-chain-management">Become a supplier</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div id="footer-bottom">
+          <div class="footer-bottom-content">
+              <div class="break-line">
+                  <hr>
+              </div>
+              <div class="container">
+                  <div class="leftdiv">
+                      <a href="https://www.unhcr.org/">
+                          <img src="img/EN-UNHCR-White.svg" id="imagem">
+                      </a>
+                  </div>
+                  <div class="rightdiv">
+                      <nav class="navbar">
+                          <ul>
+                              <li>Privacy policy</li>
+                              <li>Terms and conditions of use</li>
+                              <li>Copyright</li>
+                          </ul>
+                      </nav>
+                      <div class="copyrightimage">
+                          © UNHCR 2001-2023
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </footer>
+
+   <script type="text/javascript" src="logica.js"></script>
+
+</body>
+</html>
